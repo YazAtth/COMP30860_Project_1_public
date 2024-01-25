@@ -1,0 +1,67 @@
+
+
+/*h1 {*/
+/*    color: red;*/
+/*}*/
+
+
+
+
+.link {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+
+}
+
+.link:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    background-color: #eaeaea;
+    border-radius: 0.25em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#btn {
+    position: absolute;
+    transition: 0.1s;
+    background-color: lightgray;
+    padding: 1em;
+    border-radius: 0.5em;
+
+        /*height: 40px;*/
+        /*width: 150px;*/
+    /*}*/
+}
+
+#btn img {
+    width: 10em;
+    /*height: 5em;*/
+}
+
+/*.extract p {*/
+/*    margin: 1em;*/
+/*}*/
+
+.logo {
+    font-family: 'Vollkorn', serif;
+}
+
+.tooltip-activator {
+    text-decoration: underline;
+    color: #4f4f4f;
+    /*cursor: none;*/
+    /*background-color: blue;*/
+    /*display: inline-block;*/
+    /*font-style: italic;*/
+}
+
+/*table th {*/
+/*    !*background-color: red;*!*/
+/*    text-align: center;*/
+/*}*/

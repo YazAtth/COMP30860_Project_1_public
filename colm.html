@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="/script.js" type="text/javascript"></script>
+
+</head>
+<body>
+<!--    <h1>.....</h1>-->
+
+<!--    <div class="content">-->
+
+<!--        <div class="intro">-->
+<!--            <p>Intro</p>-->
+<!--        </div>-->
+
+<!--        <div class="image">-->
+<!--            <img src="public/3b921c51dc99d9fb2be192af3ec14f72.jpg">-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+    <button onclick="myFunction()" id="btn">
+        <img src="public/colm.jpeg">
+    </button>
+    <p id="demo"></p>
+
+
+    <script>
+        const button = document.getElementById('btn');
+        button.addEventListener('mouseover', function () {
+            button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+            button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+        });
+        button.addEventListener('click', function () {
+            alert('you clicked me')
+        })
+    </script>
+<!--    <button id="btn">Click me if you can</button>-->
+
+
+
+<!--    <img src="public/3b921c51dc99d9fb2be192af3ec14f72.jpg">-->
+
+</body>
+</html>

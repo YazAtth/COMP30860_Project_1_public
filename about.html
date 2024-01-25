@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flex justify-center bg-gray-100">
+
+        <div class="flex w-[1000px] p-1 m-1 pt-2">
+            <h1 class="logo text-5xl font-semibold flex items-center"><a href="index.html">MyWebsite</a></h1>
+            <ul class="flex flex-grow flex-row-reverse">
+                <!--                <li class="m-2 bg-gray-200 rounded-lg p-2 font-semibold"><a href="about.html">About Me</a></li>-->
+                <li class="m-2 p-2 font-semibold" id="about"><a href="about.html" class="link">About Me</a></li>
+                <li class="m-2 p-2" id="topic"><a href="index.html" class="link">Topic of Interest</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="flex justify-center bg-gray-100" style="min-height: 90vh">
+        <div class="bg-white w-[1000px] flex justify-center pb-5 rounded-md">
+            <div class="extract m-4 w-full">
+
+
+                <h1 class="text-3xl font-semibold pb-2">Detaills</h1>
+
+                <table class="table">
+                    <tr>
+                        <td>First Name</td>
+                        <td>Yasith</td>
+                    </tr>
+                    <tr>
+                        <td>Surname</td>
+                        <td>Atthanayake</td>
+                    </tr>
+                    <tr>
+                        <td>Student ID</td>
+                        <td>21417754</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>yasith.atthanayake@ucdconnect.ie</td>
+                    </tr>
+                </table>
+
+
+                <h2 class="text-2xl font-semibold">News Sites</h2>
+                <ul class="ml-3">
+                    <li class="list-disc"><a href="https://www.bbc.com">https://www.bbc.com</a></li>
+                    <li class="list-disc"><a href="https://www.ft.com">https://www.ft.com</a></li>
+                    <li class="list-disc"><a href="https://edition.cnn.com">https://edition.cnn.com</a></li>
+                </ul>
+
+
+
+                <h3 class="text-2xl font-semibold">Click on the Colm for a prize</h3>
+                <button onclick="myFunction()" id="btn" class="m-2">
+                    <img src="public/colm.jpeg">
+                </button>
+
+                <script>
+                    const button = document.getElementById('btn');
+                    button.addEventListener('mouseover', function () {
+                        button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+                        button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+                    });
+                    button.addEventListener('click', function () {
+                        alert('I lied, no prize sorry :(')
+                    })
+                </script>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="h-[20vh] bg-gray-700 flex justify-center">
+        <div class="w-[1000px] flex justify-center items-center m-2">
+            <div class="w-full flex ">
+                <h1 class="logo text-5xl text-white">MyWebsite</h1>
+
+                <div class="grow"></div>
+
+                <div class="flex justify-center items-center">
+                    <p class="text-white">Completed as Project One for COMP30860</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
